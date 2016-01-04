@@ -1,0 +1,14 @@
+{
+  "name": "employeeapp",
+  "version": "0.0.0",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "ejs": "^2.3.4",
+    "express": "~3.1.0",
+    "jade": "^1.11.0",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.3.4",
+    "passport": "^0.3.2"
+  }
+}

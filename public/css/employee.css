@@ -1,0 +1,18 @@
+h1 {
+    text-align:center
+}
+
+ul.articles li:not(:last-child) {
+    border-bottom:1px solid #ccc
+}
+.icon-user {
+    background-image: url(../images/user.png) !important;
+}
+
+.icon-add {
+    background-image: url(../images/add.png) !important;
+}
+
+.icon-delete {
+    background-image: url(../images/delete.png) !important;
+}

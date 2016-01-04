@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="employeeApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Employee CRUD Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+  <script src="/js/angular/angular.js"></script>
+  <script src="/js/app.js"></script>
+
+	<section data-ng-controller="EmployeesController" data-ng-init="find()">
+		<ul class="employees unstyled">
+			<li data-ng-repeat="employee in employees">
+				<span>{{employee.created | date:'medium'}}</span> /
+				<span>{{employee.user.name}}</span>
+				<h2><a data-ng-href="#!/articles/{{employee._id}}">{{employee.title}}</a></h2>
+				<div>{{employee.content}}</div>
+			</li>
+		</ul>
+		<h1 data-ng-hide="!employee || employee.length">No employee yet. <br> Why don't you <a href="/#!/employee/create">Create One</a>?</h1>
+	</section>
+
+ </body>

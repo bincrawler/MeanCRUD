@@ -99,9 +99,11 @@ module.exports.updateEmployee = function(req, res) {
             return res.status(404).json({success: false, message: "Employee "+req.params.employeeId+" not found"});
         } 
 
+        // remove created_at if provided
+        delete(req.body.created_at);
+
         employee = lodash.extend(employee, req.body);
 
-        delete(employee.created_at);
         employee.updated_at = (new Date()).toISOString();
 
         return employee.save( function( err ) {

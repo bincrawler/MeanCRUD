@@ -154,7 +154,7 @@ Ext.onReady(function() {
         		var me = this,
         		    grid = me.up('grid');
         		if (grid) {
-                    grid.getStore().removeAll(false);
+                    // grid.getStore().removeAll(false);
         			grid.getStore().reload();
         		}
         	}
